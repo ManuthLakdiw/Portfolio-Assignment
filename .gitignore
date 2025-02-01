@@ -1,2 +1,14 @@
-.vscode
+# Ignore macOS system files
 .DS_Store
+
+# Ignore Firebase related files
+.firebase/
+.firebaserc
+firebase.json
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore other unwanted files
+assets/.DS_Store
+404.html
