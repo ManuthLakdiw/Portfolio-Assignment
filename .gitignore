@@ -12,3 +12,4 @@ firebase.json
 # Ignore other unwanted files
 assets/.DS_Store
 404.html
+
