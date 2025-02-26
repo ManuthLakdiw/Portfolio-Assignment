@@ -161,7 +161,7 @@
   .my-img {
     width: 43vw;
     height: 67vh;
-    background-image: url("./assets/images/my-prof.svg"),
+    background-image: url("/assets/images/my-prof.svg"),
       linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0)); /* Gradient for opacity effect */
     background-size: contain;
     background-position: center;
