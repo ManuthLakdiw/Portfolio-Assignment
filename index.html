@@ -12,6 +12,7 @@
       content="Manuth Lakdiv, IJSE, Software Engineer, Full-Stack Developer, Web Developer, Software Development, Web Development, Front-end Development, Back-end Development, Scalable Applications, UI/UX Design, Software Solutions, Portfolio"
     />
     <meta name="author" content="L.K.H. Manuth Lakdiw" />
+
     <title>Manuth Lakdiw | Portfolio</title>
     <link rel="icon" href="/assets/images/codeIcon.png" />
     <link
@@ -21,13 +22,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style></style>
   </head>
+
   <body>
     <header>
+      <img src="/assets/images/myLogo.png" alt="my logo" width="100" />
       <nav>
-        <img src="/assets/images/myLogo.png" alt="my logo" width="100" />
-        <ul>
-          <li><a href="#home">Home</a></li>
+        <ul class="list-container">
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#service">Services</a></li>
           <li><a href="#skill">Skills</a></li>
@@ -39,27 +56,28 @@
 
     <main>
       <!-- home -->
-      <section id="home">
-        <div>
-          <img src="/assets/images/myphoto.png" alt="My Photo" width="300" />
-          <br />
-          <img
-            src="/assets/images/homeBackgeoundImage.jpg"
-            alt="laptop image"
-            width="600"
-          />
-          <h3>Hello, it's me</h3>
+      <section id="hero">
+        <div class="container">
+          <div class="background-img"></div>
+
+          <h3><span class="hello">Hello,</span> it's me</h3>
           <h1>Manuth Lakdiw</h1>
           <h2>Manuth Lakdiw</h2>
-          <h3>
+          <h3 class="iam">
             i'm
-            <span>Software Engineer</span>
+            <span class="position"> Software Engineer</span>
           </h3>
-          <button>About me</button>
-          <button>Hire me</button>
+          <button class="about-btn">About Me</button>
+          <button class="hire-btn">Hire Me</button>
+
+          <div class="box-container">
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
+          </div>
         </div>
+        <div class="my-img"></div>
       </section>
-      <hr />
 
       <!-- about -->
       <section id="about">
