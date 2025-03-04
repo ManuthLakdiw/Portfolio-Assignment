@@ -1,0 +1,209 @@
+#hero {
+    width: 100vw;
+    height: 100vh;
+  }
+  #hero .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .container .background-img {
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/images/homeBackgeoundImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  /* .content {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+  } */
+
+  .box {
+    width: 6vw;
+    height: 74vh;
+    background-color: aqua;
+    opacity: 1;
+    margin: 5px;
+    border-radius: 25px;
+  }
+
+  .box-container {
+    position: absolute;
+    display: flex;
+    bottom: 3%;
+    left: 72%;
+  }
+
+  .box-1 {
+    background: linear-gradient(
+      to bottom,
+      rgba(81, 103, 246, 0.7),
+      rgba(214, 214, 214, 0.5)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.773);
+    box-shadow: 2px 4px 7px rgba(172, 171, 171, 0.5);
+  }
+
+  .box-2 {
+    position: relative;
+    background: linear-gradient(
+      to top,
+      rgba(81, 103, 246, 0.7),
+      rgba(214, 214, 214, 0.5)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.773);
+    top: -50px;
+    box-shadow: 2px 4px 7px rgba(172, 171, 171, 0.5);
+  }
+
+  .box-3 {
+    background: linear-gradient(
+      to bottom,
+      rgba(19, 19, 22, 0.7),
+      rgba(214, 214, 214, 0)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.773);
+    box-shadow: 2px 4px 7px rgba(172, 171, 171, 0.5);
+  }
+
+  .my-img {
+    width: 43vw;
+    height: 67vh;
+    background-image: url("/assets/images/my-prof.svg"),
+      linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0)); /* Gradient for opacity effect */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 23%;
+    left: 62%;
+    animation: pop-up 2s alternate infinite ease-in-out;
+  }
+
+  @keyframes pop-up {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.06);
+    }
+  }
+
+  #hero h3:nth-of-type(1) {
+    position: absolute;
+    top: 33%;
+    left: 7%;
+    font-size: 2rem;
+    font-family: var(--primary-fnt);
+    color: var(--secondary-clr);
+    font-weight: 700;
+  }
+
+  #hero h3 .hello {
+    font-size: 3rem;
+    font-family: var(--primary-fnt);
+    color: var(--primary-clr);
+    font-weight: 700;
+  }
+
+  #hero h1 {
+    position: absolute;
+    top: 39%;
+    left: 7%;
+    font-size: 5.5rem;
+    font-family: var(--primary-fnt);
+    color: var(--secondary-clr);
+    font-weight: 500;
+    z-index: 2;
+  }
+
+  #hero h2 {
+    position: absolute;
+    top: 43.2%;
+    font-size: 6.5rem;
+    z-index: 1;
+    left: 9%;
+    font-family: var(--primary-fnt);
+    color: var(--shadow-clr);
+    font-weight: 700;
+  }
+
+  #hero h3:nth-of-type(2) {
+    position: absolute;
+    top: 56%;
+    left: 7%;
+  }
+
+  .iam {
+    color: var(--secondary-clr);
+    font-family: var(--primary-fnt);
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .position {
+    color: var(--primary-clr);
+    font-size: 2.2rem;
+  }
+
+  #hero button {
+    position: absolute;
+    top: 68%;
+    left: 7%;
+    font-family: var(--secondary-fnt);
+    padding: var(--btn-padding);
+    border-radius: var(--btn-border-radious);
+    font-weight: 700;
+    font-size: 1rem;
+    z-index: 3;
+    transition: background-color 0.5s ease-in-out, color 3s, border 3s;
+    
+  }
+
+  .about-btn {
+    background-color: var(--primary-clr);
+    border: 1.5px solid transparent;
+    color: var(--other-clr);
+  }
+
+  .about-btn:hover {
+    background-color: var(--other-clr);
+    color: var(--primary-clr);
+    border: 1.5px solid var(--primary-clr);
+    cursor: pointer;
+  }
+
+  .hire-btn {
+    margin-left: 180px;
+    background-color: var(--secondary-clr);
+    color: var(--other-clr);
+    border: 1.5px solid transparent;
+    animation: pop-up 1s alternate infinite ease-in-out;
+
+  }
+
+  .hire-btn:hover {
+    color: var(--primary-clr);
+    border: 1.5px solid var(--primary-clr);
+    cursor: pointer;
+  }
+
+  @keyframes pop-up {
+    0%{
+      transform: scale(1);
+    }
+
+    100%{
+      transform: scale(1.05);
+    }
+    
+  }

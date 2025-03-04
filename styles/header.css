@@ -1,0 +1,66 @@
+@import url("/styles/normalize.css");
+header {
+    width: 100vw;
+    padding: 35px;
+    background-color: #fffafa;
+    box-shadow: 0px 1px 10px rgba(224, 218, 218, 0.638);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  img[alt="my logo"] {
+    width: 130px;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .list-container {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 120px;
+  }
+
+  .list-container li {
+    margin-left: 60px;
+    font-family: var(--primary-fnt);
+  }
+
+  li a {
+    color: var(--secondary-clr);
+    font-size: medium;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.8s ease;
+  }
+
+  li a:hover {
+    color: var(--primary-clr);
+    font-weight: 700;
+  }
+
+  li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-clr);
+    transform: scaleX(0);
+    transition: transform 0.8s ease;
+  }
+
+  li a:hover::after {
+    transform: scaleX(1);
+  }
