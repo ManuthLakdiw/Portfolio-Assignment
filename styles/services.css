@@ -1,0 +1,121 @@
+
+#service {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--other-clr);
+    position: relative;
+    margin-top: 150px;
+}
+
+#service h1{
+    font-family: var(--primary-fnt);
+    font-weight: 700;
+    color: var(--secondary-clr);
+    font-size: var(--topic-fnt-sz);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+#service h1 span{
+    color: var(--primary-clr);
+}
+
+.service-ud{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    border: 1.5px solid var(--underline-clr);
+}
+
+#service h2{
+    position: absolute;
+    top: 2.5%;
+    left: 36%;
+    font-size: var(--topic-background-fnt-sz);
+    font-family: var(--primary-fnt);
+    color: var(--shadow-clr);
+    z-index: 2;
+}
+
+
+#service .background-div{
+    position: absolute;
+    top: 7.5%;
+    width: 100%;
+    height: 800px;
+    /* background-color: rgba(81, 103, 246, 0); */
+    z-index: 1;
+}
+
+.service-container {
+    padding: 7%;
+    position: absolute;
+    top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    z-index: 2;
+}
+
+.service-container div {
+    background-color: white ;
+    padding: 30px;
+    border-radius: var(--btn-border-radious);
+    height: 350px;
+    overflow-y: scroll;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid var(--shadow-clr);
+    
+}
+
+.service-container div:hover {
+    transform: translateY(-20px);
+    box-shadow: -0.5px 0.5px 4px var(--para-font-clr);
+
+}
+.service-container div:hover img {
+    animation: sway 1s infinite alternate ease-in-out 0.5s;
+
+
+}
+
+.service-container div span {
+    display: block;
+    font-family: var(--primary-fnt);
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 10px 0px;
+}
+
+.service-container div p {
+    font-family: var(--primary-fnt);
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--para-font-clr);
+    padding: 10px 0px;
+
+}
+
+.service-container div img {
+}
+
+@keyframes sway {
+    0% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+
+
+
+
