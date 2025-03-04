@@ -37,9 +37,8 @@
 
   #about .underline{
     position: absolute;
-    width: 90px;
+    width: 50%;
     border: 1.5px solid var(--underline-clr);
-    bottom: -3px; 
     left: 50%;
     transform: translateX(-50%);
   }
