@@ -4,7 +4,7 @@
     height: 100vh;
     background-color: var(--other-clr);
     position: relative;
-    margin-top: 150px;
+    margin-top: 10%;
 }
 
 #service h1{
@@ -65,7 +65,7 @@
     padding: 30px;
     border-radius: var(--btn-border-radious);
     height: 350px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     transition: all 0.5s ease-in-out;
     border: 1px solid var(--shadow-clr);
     
@@ -77,7 +77,7 @@
 
 }
 .service-container div:hover img {
-    animation: sway 1s infinite alternate ease-in-out 0.5s;
+    animation: sway 1s infinite alternate ease-in-out 0.2s;
 
 
 }
