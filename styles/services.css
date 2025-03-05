@@ -65,7 +65,6 @@
     padding: 30px;
     border-radius: var(--btn-border-radious);
     height: 350px;
-    /* overflow-y: scroll; */
     transition: all 0.5s ease-in-out;
     border: 1px solid var(--shadow-clr);
     
@@ -74,8 +73,42 @@
 .service-container div:hover {
     transform: translateY(-20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    animation: rotate-border 1s infinite ease-in-out;
 }
+
+@keyframes rotate-border {
+    0% {
+        border-top-color: var(--primary-clr);
+        border-right-color: var(--shadow-clr);
+        border-bottom-color: var(--shadow-clr);
+        border-left-color: var(--shadow-clr);
+    }
+    25% {
+        border-top-color: var(--shadow-clr);
+        border-right-color: var(--primary-clr);
+        border-bottom-color: var(--shadow-clr);
+        border-left-color: var(--shadow-clr);
+    }
+    50% {
+        border-top-color: var(--shadow-clr);
+        border-right-color: var(--shadow-clr);
+        border-bottom-color: var(--primary-clr);
+        border-left-color: var(--shadow-clr);
+    }
+    75% {
+        border-top-color: var(--shadow-clr);
+        border-right-color: var(--shadow-clr);
+        border-bottom-color: var(--shadow-clr);
+        border-left-color: var(--primary-clr);
+    }
+    100% {
+        border-top-color: var(--primary-clr);
+        border-right-color: var(--shadow-clr);
+        border-bottom-color: var(--shadow-clr);
+        border-left-color: var(--shadow-clr);
+    }
+}
+
 .service-container div:hover img {
     animation: sway 1s infinite alternate ease-in-out 0.2s;
 
