@@ -282,7 +282,6 @@
   border-radius: var(--btn-border-radious);
   border: 2px solid white;
   border-bottom-color: var(--primary-clr);
-  box-shadow: -0.2px -0.2px 5px var(--para-font-clr);
 
   background: linear-gradient(
     to bottom right, 
@@ -291,19 +290,25 @@
   );
 
 
-  animation: down-up 2s infinite alternate ease-in-out 3s;
+  animation: down-up  2s infinite alternate ease-in-out 3s;
 }
 
 @keyframes down-up {
   0%{
     transform: translate(0);
+    box-shadow: -0.2px -0.2px 5px var(--para-font-clr);
+
   }
   50%{
-    transform: translatey(5px);
+    transform: translateY(5px);
+    box-shadow: -0.2px -0.2px 10px var(--para-font-clr); /* Shadow එක වැඩි කරලා */
+
   }
 
   100%{
     transform: translate(0);
+    box-shadow: -0.2px -0.2px 5px var(--para-font-clr);
+
 
   }
   
