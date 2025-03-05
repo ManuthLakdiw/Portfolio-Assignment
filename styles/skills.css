@@ -1,0 +1,147 @@
+/* :root {
+    --primary-fnt: "Ubuntu Sans", serif;
+    --secondary-fnt: "Ubuntu Sans Mono", serif;
+    --primary-clr: #5167f6;
+    --secondary-clr: #131316;
+    --other-clr: #fffafa;
+    --shadow-clr: rgba(1, 0, 34, 0.1);
+    --underline-clr: #151619;
+    --line-height:2;
+    --btn-padding: 10px 45px;
+    --btn-border-radious: 13px;
+    --para-font-clr: #505050;
+    --topic-fnt-sz: 3rem;
+    --topic-background-fnt-sz: 5rem;
+  } */
+
+
+#skill{
+    width: 100vw;
+    height: 70vh;
+    background-color: var(--other-clr);
+    position: relative;
+    margin-top: 25%;
+}
+
+#skill h1{
+    font-family: var(--primary-fnt);
+    font-weight: 700;
+    color: var(--secondary-clr);
+    font-size: var(--topic-fnt-sz);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+#skill h1 span{
+    color: var(--primary-clr);
+}
+
+
+.skill-ud{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    border: 1.5px solid var(--underline-clr);
+}
+
+#skill h2{
+    position: absolute;
+    top: 2.3%;
+    left: 44%;
+  
+    font-size: var(--topic-background-fnt-sz);
+    font-family: var(--primary-fnt);
+    color: var(--shadow-clr);
+    z-index: 2;
+}
+
+
+.skill-container {
+    padding: 7%;
+    position: absolute;
+    top: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+    z-index: 2;
+}
+
+.skill-container > div {
+    background-color: white ;
+    padding: 30px;
+    /* border-radius: var(--btn-border-radious); */
+    border-top-left-radius: var(--btn-border-radious);
+    border-bottom-right-radius: var(--btn-border-radious);
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    height: 50px;
+    /* overflow-y: scroll; */
+    transition: all 30s ease-in-out;
+    border: 1px solid var(--shadow-clr);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    
+}   
+.skill-container div div h4{
+    font-family: var(--primary-fnt);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-clr);
+
+}
+.skill-container div div h6{
+    font-family: var(--secondary-fnt);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--para-font-clr);
+    margin-top: 5px;
+
+}
+.skill-container div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.skill-container > div {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-container > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-clr);
+    cursor: pointer;
+}
+
+.skill-container > div:hover h4,
+.skill-container > div:hover h6 {
+    color: var(--other-clr);
+}
+
+.skill-container div div h4,
+.skill-container div div h6 {
+    transition: color 0.3s ease-in-out;
+}
