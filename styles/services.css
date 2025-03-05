@@ -45,9 +45,9 @@
     position: absolute;
     top: 7.5%;
     width: 100%;
-    height: 800px;
-    /* background-color: rgba(81, 103, 246, 0); */
-    z-index: 1;
+    height: 95%;
+    background-color: rgba(81, 103, 246, 0.09);
+    z-index: 1; 
 }
 
 .service-container {
