@@ -73,7 +73,7 @@
 
 .service-container div:hover {
     transform: translateY(-20px);
-    box-shadow: -0.5px 0.5px 4px var(--para-font-clr);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 .service-container div:hover img {
