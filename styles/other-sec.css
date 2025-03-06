@@ -71,29 +71,29 @@
 #other .icon-back-1{
     background-color: #DE0000;
     box-shadow: 0px 1px 4px #DE0000;
-    animation: pop-up 1s infinite alternate ;
+    animation: p-up 1s infinite alternate ;
 }
 
 #other .icon-back-2{
     background-color: #9600D1;
     box-shadow: 0px 1px 4px #9600D1;
-    animation: pop-up 1.5s infinite alternate;
+    animation: p-up 1.5s infinite alternate;
 }
 
 #other .icon-back-3{
     background-color: #0300CE;
     box-shadow: 0px 1px 4px #0300CE;
-    animation: pop-up 1.8s infinite alternate ;
+    animation: p-up 1.8s infinite alternate ;
 }
 
 #other .icon-back-4{
     background-color: #E69900;
     box-shadow: 0px 1px 4px #E69900;
-    animation: pop-up 2s infinite alternate;
+    animation: p-up 2s infinite alternate;
 }
 
 
-@keyframes pop-up {
+@keyframes p-up {
     0% {
         transform: scale(1) 
     }
@@ -179,7 +179,6 @@
 
 #other .feature-back h2 span{
     color: var(--primary-clr);
-    animation: pop-up 2s infinite;
 }
 
 
