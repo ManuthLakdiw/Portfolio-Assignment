@@ -86,15 +86,15 @@
     position: absolute;
     top: 23%;
     left: 62%;
-    animation: pop-up 2s alternate infinite ease-in-out;
+    animation: pop-up-image 2s alternate infinite ease-in-out;
   }
 
-  @keyframes pop-up {
+  @keyframes pop-up-image {
     0% {
       transform: scale(1);
     }
     100% {
-      transform: scale(1.06);
+      transform: scale(1.01);
     }
   }
 
@@ -187,7 +187,7 @@
     background-color: var(--secondary-clr);
     color: var(--other-clr);
     border: 1.5px solid transparent;
-    animation: pop-up 1s alternate infinite ease-in-out;
+    animation: pop-up-hirebtn 1s alternate infinite ease-in-out !important;
 
   }
 
@@ -197,7 +197,7 @@
     cursor: pointer;
   }
 
-  @keyframes pop-up {
+  @keyframes pop-up-hirebtn {
     0%{
       transform: scale(1);
     }
