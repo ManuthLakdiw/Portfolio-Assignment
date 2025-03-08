@@ -243,6 +243,12 @@
     background-color: var(--secondary-clr);
 }
 
+@media screen and (min-width:320px) and (max-width:374px) {
+    #contact{
+        display: none;
+    }
+}
+
 
 
 
