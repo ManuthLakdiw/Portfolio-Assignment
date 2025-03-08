@@ -158,6 +158,15 @@
 
 
 @media screen and (min-width:320px) and (max-width:374px) {
+
+    #skill{
+        width: 100vw;
+        min-height: 100vh;
+        background-color: var(--other-clr);
+        position: relative;
+        margin-top: 10%;
+    }
+
     #skill h1{
         position: relative;
         top: 5%;
@@ -196,15 +205,15 @@
     
     
     .skill-container {
-        /* padding: 7%;
+        padding: 7%;
         position: absolute;
-        top: 10%;
+        top: 30%;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 5%;
-        z-index: 2; */
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3%;
+        z-index: 2;
 
-        display: none;
+        /* display: none; */
     }
     
     .skill-container > div {
@@ -215,26 +224,26 @@
         border-bottom-right-radius: var(--btn-border-radious);
         border-top-right-radius: 60px;
         border-bottom-left-radius: 60px;
-        height: 50px;
+        height: 40px;
         /* overflow-y: scroll; */
         transition: all 30s ease-in-out;
         border: 1px solid var(--shadow-clr);
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 200px;
+        width: 60vw;
         
     }   
     .skill-container div div h4{
         font-family: var(--primary-fnt);
-        font-size: 1.2rem;
+        font-size: 6vw;
         font-weight: 700;
         color: var(--secondary-clr);
     
     }
     .skill-container div div h6{
         font-family: var(--secondary-fnt);
-        font-size: 0.75rem;
+        font-size: 3vw;
         font-weight: 400;
         color: var(--para-font-clr);
         margin-top: 5px;
@@ -246,6 +255,12 @@
         justify-content: flex-start;
         margin-left: 20px;
     }
+
+    .skill-container img{
+        width: 20px;
+    }
+
+
     
     @keyframes fadeIn {
         from {
