@@ -1563,3 +1563,304 @@
 
 
 
+@media screen and (min-width:1024px) and (max-width: 1439px) {
+
+
+  
+}
+
+
+
+
+
+@media screen and (min-width:1440px){
+    #project{
+        width: 100vw;
+        height: 170vh;
+        background-color: var(--other-clr);
+        /* background-color: pink; */
+        position: relative;
+        margin-top: 10%;
+    }
+    
+    
+    #project h1{
+        font-family: var(--primary-fnt);
+        font-weight: 700;
+        color: var(--secondary-clr);
+        font-size: var(--topic-fnt-sz);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+      }
+    
+    #project h1 span{
+        color: var(--primary-clr);
+    }
+    
+    
+    .project-ud{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 50%;
+        border: 1.5px solid var(--underline-clr);
+    }
+    
+    #project h2{
+        position: absolute;
+        top: 2.3%;
+        left: 39%;
+      
+        font-size: var(--topic-background-fnt-sz);
+        font-family: var(--primary-fnt);
+        color: var(--shadow-clr);
+        z-index: 2;
+    }
+    
+    
+    #project .para{
+        position: absolute;
+        top: 9%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: var(--primary-fnt);
+        font-weight: 400;
+        color: var(--para-font-clr);
+        text-align: center;
+    }
+    
+    #project .background-div{
+        position: absolute;
+        top: 10.5%;
+        width: 100%;
+        height: 65%;
+        background-color: rgba(81, 103, 246, 0.09);
+        z-index: 2; 
+    }
+    
+    #project .btn-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 15%;
+        
+    }
+    
+    #project .btn-container div{
+        margin-right: 35px;
+        font-family: var(--primary-fnt);
+        color: var(--secondary-clr);
+        font-weight: 700;
+        font-size: 1.3rem;
+        z-index: 3;
+    }
+    
+    #project .btn-container div:hover{
+        cursor: pointer;
+    }
+    
+    
+    #project .work-container{
+        width: 100%;
+        height: 100%;
+        padding: 7%;
+    
+    }
+    
+    
+    #project .work-container .work{
+            /* width: 100px;
+            height: 100px; */
+        position: absolute;
+        border-radius: var(--btn-border-radious);
+        z-index: 10; 
+        background-color: white;
+        border: 1px solid white;
+    
+    }
+    
+    
+    .work-1{
+        left: 15.5%;
+        top: 20%;
+        width: 40%;
+        height: 350px
+    
+    }
+    
+    .work-2{
+        top: 20%;
+        right: 15.5%;
+        width: 25%;
+        height: 500px;
+        
+    }
+    
+    .work-3{
+        bottom: 15%;
+        right: 15.5%;
+        width: 40%;
+        height: 350px;
+        
+    }
+    
+    .work-4{
+        bottom: 15%;
+        left: 15.5%;
+        width: 25%;
+        height: 500px;
+    }
+    
+    #project .img {
+        position: relative;
+        border-radius: var(--btn-border-radious);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden; 
+    }
+    
+    #project .img-1 {
+        background-image: url("/assets/images/project1.jpg");
+    
+    }
+    
+    #project .img-2 {
+        background-image: url("/assets/images/project5.jpg");
+    
+    }
+    
+    #project .img-3 {
+        background-image: url("/assets/images/tictactoe.png");
+    
+    }
+    
+    #project .img-4 {
+        background-image: url("/assets/images/project4.jpg");
+    
+    }
+        
+    
+    #project .img:hover {
+        transform: translate(6px, 6px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    
+    }
+    
+    #project .desc {
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: var(--btn-border-radious);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: top 0.5s ease-in-out; 
+        padding: 30px;
+        box-sizing: border-box; 
+    
+    }
+    
+    #project .img:hover .desc {
+        top: 10%;
+    }
+    
+    #project .container{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 1000;
+    }
+    #project .container .circle{
+        width: 5px;
+        height: 5px;
+        background-color: var(--secondary-clr);
+        border-radius: 100%;
+    }
+    
+    #project .container .line-1{
+        width: 39vw;
+        height: 1.5px;
+        background-color: var(--secondary-clr);
+    }
+    
+    #project .container .line-2{
+        width: 39vw;
+        height: 1.5px;
+        background-color: var(--secondary-clr);
+    }
+    
+    #project .container .line-3{
+        width: 1.5px;
+        height: 485px;
+        background-color: var(--secondary-clr);
+    }
+    
+    
+    #project .container .line-4{
+        width: 1.5px;
+        height: 485px;
+        background-color: var(--secondary-clr);
+    }
+    
+    #project .r-container-1 {
+        top: 47%;
+        left: 15.5%;
+    }
+    
+    #project .r-container-2 {
+        top: 58%;
+        right: 15.5%;
+    }
+    
+    #project .r-container-3 {
+        flex-direction: column;
+        bottom: 15%;
+        left: 42.5%;
+    }
+    
+    #project .r-container-4 {
+        flex-direction: column;
+        top: 20%;
+        right: 42.5%;
+    }
+    
+    
+    #project .desc h3{
+        font-family: var(--primary-fnt);
+        color: black;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+    
+    #project .desc p{
+        margin-top: 10px;
+        width: 100%;
+        font-family: var(--primary-fnt);
+        font-size: 0.9rem;
+        line-height: 1.8;
+        font-weight: 400;
+        color: var(--secondary-clr);
+    }
+    
+    #project .desc h4{
+        margin-top: 60px;
+        font-family: var(--secondary-fnt);
+        color: black;
+        
+    }
+    #project .desc span{
+        font-family: var(--secondary-fnt);
+        color: var(--secondary-clr);
+        
+    }
+
+}
+
+

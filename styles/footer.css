@@ -99,3 +99,24 @@ footer span{
         color: var(--primary-clr);
     }   
 }
+
+
+
+
+
+@media screen and (min-width:1440px){
+
+    footer{
+        margin-top: 40px;
+        background-color: rgba(81, 103, 246, 0.3);
+        padding: 35px;
+        display: flex;
+        justify-content: center;
+        font-family: var(--primary-fnt);
+        font-weight: 700;
+    }
+    
+    footer span{
+        color: var(--primary-clr);
+    }   
+}
