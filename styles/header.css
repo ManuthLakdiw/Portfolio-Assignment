@@ -126,4 +126,29 @@ header {
   }
 
 
+
+
+
+
+
+  @media screen and (min-width:768px) and (max-width:1023px) {
+    *{
+      overflow-x: hidden;
+    }
+    .list-container{
+      display: none;
+    }
+
+    header{
+      padding: 15px;
+      height: 50px;
+      /* background -color: rgba(81, 103, 246, 0.3); */
+    }
+
+    img[alt="my logo"] {
+      width: 130px;
+    }
+    
+  }
+
  

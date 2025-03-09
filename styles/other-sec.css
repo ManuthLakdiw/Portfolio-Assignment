@@ -851,3 +851,218 @@
         }
     }
 }
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #other{
+        width: 100vw;
+        height: 200vh;
+        background-color: var(--other-clr);
+        /* background-color: pink; */
+        position: relative;
+        margin-top: 200px;
+    }
+    
+    #other .other-container{
+        animation: fadeIn 1s ease-in-out;
+        min-height: 100vh;
+        position: absolute;
+        top: -40px;
+        width: 100%;
+    
+    }
+    
+    #other .info{
+        margin-top: 0px;
+        width: 310px;
+        min-height: 100px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 50px;
+
+    
+    }
+
+   
+    
+    #other .info h3{
+        font-family: var(--primary-fnt);
+        color: var(--secondary-clr);
+        font-size: 3vw;
+        font-weight: 700;
+    }
+    
+    #other .info p{
+        font-family: var(--primary-fnt);
+        color: var(--para-font-clr);
+        margin-top: 10px;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 2vw;
+    
+    }
+    
+    
+    
+    #other .icon-back{
+        width: 8vw;
+        height: 8vw;
+        border-radius: 100%;
+        /* background-color: black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #other .icon-back img{
+        width: 5vw;
+    }
+    
+    #other .icon-back-1{
+        background-color: #DE0000;
+        box-shadow: 0px 1px 4px #DE0000;
+        animation: p-up 1s infinite alternate ;
+    }
+    
+    #other .icon-back-2{
+        background-color: #9600D1;
+        box-shadow: 0px 1px 4px #9600D1;
+        animation: p-up 1.5s infinite alternate;
+    }
+    
+    #other .icon-back-3{
+        background-color: #0300CE;
+        box-shadow: 0px 1px 4px #0300CE;
+        animation: p-up 1.8s infinite alternate ;
+    }
+    
+    #other .icon-back-4{
+        background-color: #E69900;
+        box-shadow: 0px 1px 4px #E69900;
+        animation: p-up 2s infinite alternate;
+    }
+    
+    
+    @keyframes p-up {
+        0% {
+            transform: scale(1) 
+        }
+        50% {
+            transform: scale(1.2) 
+        }
+        100% {
+            transform: scale(1) 
+        }
+    }
+    
+    #other .info1{
+        top: 0px;
+        left: -10px;
+    }
+    
+    #other .info2{
+        top: 0px;
+        left: 365px;
+    }
+    
+    #other .info3{
+        top: 0px;
+        left: -10px;
+    }
+    
+    #other .info4{
+        top: 0px;
+        left: 365px;
+    }
+    
+    
+    #other .feature-back{
+        position: absolute;
+        top: 920px;
+        right: 0;
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(
+            to left,
+            rgba(19, 19, 22, 0.15),
+            transparent
+      );
+      /* background-color: yellow; */
+        padding: 30px 75px;
+        z-index: 1;
+        animation: go-forword 1.5s ease-in-out;
+
+    
+    }
+    
+    @keyframes go-forword {
+        from {
+            opacity: 0;
+            right: -100%;
+        }
+        to {
+            opacity: 1;
+            right: 0%;
+        }    
+    }
+    
+    
+    
+    #other .feature-back label{
+        z-index: 3;
+        padding: var(--btn-padding);
+        background-color: rgba(81, 103, 246, 0.5);
+        border-radius: var(--btn-border-radious);
+        color: white;
+        font-family: var(--primary-fnt);
+        font-weight:lighter;
+        font-size: 1rem;
+        position: absolute;
+        left: 25%;
+        /* margin-top: ; */
+    
+    }
+    
+    #other .feature-back h2{
+        margin-top: 55px;
+        font-family: var(--primary-fnt);
+        color: var(--secondary-clr);
+        font-size: 5vw;
+        position: absolute;
+        left: 25%;
+    }
+    
+    #other .feature-back h2 span{
+        color: var(--primary-clr);
+    }
+    
+    
+    #other .feature-back p{
+        font-family: var(--primary-fnt);
+        font-weight: 400;
+        color: var(--para-font-clr);
+        font-size: 2.3vw;
+        margin-top: 30px;
+        line-height: 1.6;
+        position: absolute;
+        bottom: 10%;
+        left: 25%;
+    }
+    
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

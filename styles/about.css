@@ -580,3 +580,147 @@
       margin-bottom: 25px;
   }
 } 
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  * {
+      overflow-x: hidden;
+  }
+
+  #about {
+      width: 100vw;
+      height: 120vh;
+      position: relative;
+      padding: 20px 0;
+  }
+
+  #about .background-div {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+          to left,
+          rgba(81, 103, 246, 0.15),
+          transparent
+      );
+      position: absolute;
+      top: 0;
+  }
+
+  #about h1 {
+      position: relative;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--primary-fnt);
+      font-weight: 700;
+      color: var(--secondary-clr);
+      font-size: 7vw;
+      text-align: center; 
+      z-index: 2;
+  }
+
+  #about h1 span {
+      color: var(--primary-clr);
+  }
+
+  #about .underline {
+      position: absolute;
+      width: 50%; 
+      left: 50%;
+      transform: translateX(-50%);
+      top: 90%;
+  }
+
+  #about h2 {
+      position: relative;
+      top: 1%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 9vw;
+      text-align: center;
+  }
+
+  #about article p {
+      position: relative;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      font-size: 3vw; 
+      line-height: 1.3 !important;
+      color: var(--para-font-clr);
+      text-align: center;
+  }
+
+  #about article p span {
+      font-weight: 700;
+  }
+
+  #about article button{
+    position: absolute; 
+    top: 58%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--other-clr);
+    height: 50px;
+  
+  }
+
+  #about .ico-circle i {
+      font-size: 1.2rem;
+  }
+
+  @keyframes up-down {
+      0% {
+          transform: scale(1);
+      }
+      100% {
+          transform: scale(1.15);
+      }
+  }
+
+  #about .main-container {
+      position: absolute;
+      top: 61%;
+      left: 0;
+      transform: translateY(0);
+      padding: 20px;
+      text-align:start;
+  }
+
+  #about .ico-circle {
+      width: 42px; 
+      height: 42px;
+  }
+
+  #about .ico-circle i {
+    font-size: 0.8rem;
+    
+}
+
+  #about .content h4 {
+      font-size: 1.2rem;
+      font-weight: 700;
+  }
+
+  #about .content p {
+      font-size: 1rem;
+      font-weight: 500;
+  }
+
+  #about .content a {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+  #about .container {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 25px;
+  }
+} 
