@@ -148,8 +148,6 @@
 
 }
 
-.service-container div img {
-}
 
 @keyframes sway {
     0% {
@@ -162,16 +160,6 @@
         transform: rotate(-10deg);
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

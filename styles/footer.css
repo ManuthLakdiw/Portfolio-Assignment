@@ -26,4 +26,23 @@ footer{
 
 footer span{
     color: var(--primary-clr);
+}   
+
+
+
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    footer{
+        margin-top: 40px;
+        background-color: rgba(81, 103, 246, 0.3);
+        padding: 35px;
+        font-family: var(--primary-fnt);
+        font-weight: 700;
+        font-size: 5vw;
+        text-align: center;
+    }
+    
+    footer span{
+        color: var(--primary-clr);
+    }   
 }
