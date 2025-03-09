@@ -292,3 +292,87 @@
 
 
 }
+
+
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  * {
+      overflow-x: hidden;
+  }
+
+  #hero {
+      margin-top: 60px;
+      height: 110vw;
+    
+  }
+
+  .my-img {
+      display: none;
+  }
+
+  .box-container {
+      display: none;
+  }
+
+  #hero h3:nth-of-type(1) {
+      position: absolute;
+      top: 8%;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 7.5vw;
+  }
+
+  #hero h3 .hello {
+      font-size: 9vw;
+  }
+
+  #hero h1 {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 7vw;
+      font-weight: 700;
+  }
+
+  #hero h2 {
+      position: absolute;
+      top: 21%;
+      left: 16%;
+      font-size: 11vw;
+  }
+
+  #hero h3:nth-of-type(2) {
+      top: 40%;
+      left: 50%;
+  }
+
+  .iam {
+      transform: translate(-50%);
+      font-size: 7vw;
+      font-weight: 800;
+      color: var(--secondary-clr);
+      text-align: center;
+  }
+
+  .position {
+      color: var(--primary-clr);
+      font-size: 5.6vw;
+      display: block;
+  }
+
+  .about-btn {
+      display: none;
+  }
+
+  .hire-btn {
+      position: absolute;
+      top: 80% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      margin-left: 0;
+      font-size: 0.8rem;
+  }
+
+
+}

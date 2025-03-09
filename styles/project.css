@@ -612,3 +612,318 @@
 
 
 
+
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    #project{
+        width: 100vw;
+        min-height: 170vh;
+        background-color: var(--other-clr);
+        /* background-color: pink; */
+        position: relative;
+        margin-top: 10%;
+    }
+    
+    
+    #project h1{
+        position: relative;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: var(--primary-fnt);
+        font-weight: 700;
+        color: var(--secondary-clr);
+        font-size: 10vw;
+        text-align: center;
+        z-index: 2;
+        margin-top: 100px;
+      }
+    
+    #project h1 span{
+        color: var(--primary-clr);
+    }
+    
+    
+    .project-ud{
+        position: absolute;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 96%;
+    }
+    
+    #project h2{
+        position: relative;
+        top: 4%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14vw;
+        text-align: center;
+    }
+    
+    
+    #project .para{
+        position: absolute;
+        top: 19%;
+        left: 50%;
+        width: 90%;
+        font-size: 4vw;
+        transform: translateX(-50%);
+        font-family: var(--primary-fnt);
+        font-weight: 400;
+        color: var(--para-font-clr);
+        text-align: center;
+
+
+    }
+    
+    #project .background-div{
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        height: 65%;
+        background-color: rgba(81, 103, 246, 0.09);
+        z-index: 1; 
+    }
+    
+    #project .btn-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 10%;
+        z-index: 2; 
+
+
+        /* display: none; */
+        
+    }
+    
+    #project .btn-container div{
+        margin-right: 20px;
+        font-family: var(--primary-fnt);
+        color: var(--secondary-clr);
+        font-weight: 700;
+        font-size: 3.5vw;
+        z-index: 3;
+
+    }
+    
+    #project .btn-container div:hover{
+        cursor: pointer;
+    }
+    
+    
+    #project .work-container{
+        position: absolute;
+        top: 400px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        min-height: 100%;
+        padding: 1%;
+        z-index: 4; 
+
+    
+    }
+    
+    
+    #project .work-container .work{
+        position: absolute;
+        border-radius: var(--btn-border-radious);
+        z-index: 10; 
+        background-color: white;
+        border: 1px solid white;
+    
+    }
+    
+    
+    .work-1{
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+        height: 400px;
+        z-index: 600;
+    
+    }
+    
+    .work-2{
+        left: 50%;
+        transform: translate(-50%);
+        top: 450px;
+        width: 80%;
+        height: 400px;
+        
+    }
+    
+    .work-3{
+        left: 50%;
+        transform: translate(-50%);
+        top: 900px;
+        width: 80%;
+        height: 400px;
+        
+    }
+    
+    .work-4{
+        left: 50%;
+        transform: translate(-50%);
+        top: 1350px;
+        width: 80%;
+        height: 400px;  
+    }
+    
+    #project .img {
+        position: relative;
+        border-radius: var(--btn-border-radious);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden; 
+    }
+    
+    #project .img-1 {
+        background-image: url("/assets/images/project1.jpg");
+    
+    }
+    
+    #project .img-2 {
+        background-image: url("/assets/images/project5.jpg");
+    
+    }
+    
+    #project .img-3 {
+        background-image: url("/assets/images/tictactoe.png");
+    
+    }
+    
+    #project .img-4 {
+        background-image: url("/assets/images/project4.jpg");
+    
+    }
+        
+    
+    #project .img:hover {
+        transform: translate(6px, 6px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    
+    }
+    
+    #project .desc {
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: var(--btn-border-radious);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: top 0.5s ease-in-out; 
+        padding: 30px;
+        box-sizing: border-box; 
+    
+    }
+    
+    #project .img:hover .desc {
+        top: 10%;
+    }
+    
+    #project .container{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 1000;
+
+        display: none;
+
+    }
+    #project .container .circle{
+        width: 5px;
+        height: 5px;
+        background-color: var(--secondary-clr);
+        border-radius: 100%;
+    }
+    
+    #project .container .line-1{
+        width: 39vw;
+        height: 1.5px;
+        background-color: var(--secondary-clr);
+    }
+    
+    #project .container .line-2{
+        width: 39vw;
+        height: 1.5px;
+        background-color: var(--secondary-clr);
+    }
+    
+    #project .container .line-3{
+        width: 1.5px;
+        height: 485px;
+        background-color: var(--secondary-clr);
+    }
+    
+    
+    #project .container .line-4{
+        width: 1.5px;
+        height: 485px;
+        background-color: var(--secondary-clr);
+    }
+    
+    #project .r-container-1 {
+        top: 47%;
+        left: 15.5%;
+    }
+    
+    #project .r-container-2 {
+        top: 58%;
+        right: 15.5%;
+    }
+    
+    #project .r-container-3 {
+        flex-direction: column;
+        bottom: 15%;
+        left: 42.5%;
+    }
+    
+    #project .r-container-4 {
+        flex-direction: column;
+        top: 20%;
+        right: 42.5%;
+    }
+    
+    
+    #project .desc h3{
+        font-family: var(--primary-fnt);
+        color: black;
+        font-weight: 700;
+        font-size: 6vw;
+    }
+    
+    #project .desc p{
+        margin-top: 10px;
+        width: 100%;
+        font-family: var(--primary-fnt);
+        font-size: 4vw;
+        line-height: 1.8;
+        font-weight: 400;
+        color: var(--secondary-clr);
+    }
+    
+    #project .desc h4{
+        margin-top: 60px;
+        font-family: var(--secondary-fnt);
+        color: black;
+        
+    }
+    #project .desc span{
+        font-family: var(--secondary-fnt);
+        color: var(--secondary-clr);
+        
+    }
+}
+
+
+

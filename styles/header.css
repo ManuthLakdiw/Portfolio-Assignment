@@ -84,4 +84,26 @@ header {
     
   }
 
+
+
+  @media screen and (min-width:375px) and (max-width:424px) {
+    *{
+      overflow-x: hidden;
+    }
+    .list-container{
+      display: none;
+    }
+
+    header{
+      padding: 15px;
+      /* background -color: rgba(81, 103, 246, 0.3); */
+    }
+
+    img[alt="my logo"] {
+      width: 100px;
+    }
+    
+  }
+
+
  

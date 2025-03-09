@@ -300,3 +300,152 @@
     }
     
 }
+
+
+
+@media screen and (min-width:375px) and (max-width:424px) {
+
+    #skill{
+        width: 100vw;
+        min-height: 100vh;
+        background-color: var(--other-clr);
+        position: relative;
+        margin-top: 10%;
+    }
+
+    #skill h1{
+        position: relative;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: var(--primary-fnt);
+        font-weight: 700;
+        color: var(--secondary-clr);
+        font-size: 11vw;
+        text-align: center;
+        z-index: 2;
+        margin-top: 100px;
+      }
+    
+    #skill h1 span{
+        color: var(--primary-clr);
+    }
+    
+    
+    .skill-ud{
+        position: absolute;
+        width: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 96%;
+    }
+    
+    #skill h2{
+        position: relative;
+        top: 1.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14vw;
+        text-align: center;
+    }
+    
+    
+    .skill-container {
+        padding: 7%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-172px, -34px);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3%;
+        z-index: 2;
+        
+        /* display: none; */
+    }
+    
+    .skill-container > div {
+        background-color: white ;
+        padding: 30px;
+        /* border-radius: var(--btn-border-radious); */
+        border-top-left-radius: var(--btn-border-radious);
+        border-bottom-right-radius: var(--btn-border-radious);
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        height: 45px;
+        /* overflow-y: scroll; */
+        transition: all 30s ease-in-out;
+        border: 1px solid var(--shadow-clr);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 60vw;
+        overflow: hidden;
+        
+    }   
+    .skill-container div div h4{
+        font-family: var(--primary-fnt);
+        font-size: 6vw;
+        font-weight: 700;
+        color: var(--secondary-clr);
+    
+    }
+    .skill-container div div h6{
+        font-family: var(--secondary-fnt);
+        font-size: 3vw;
+        font-weight: 400;
+        color: var(--para-font-clr);
+        margin-top: 5px;
+    
+    }
+    .skill-container div div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .skill-container img{
+        width: 20px;
+    }
+
+
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .skill-container {
+        animation: fadeIn 1s ease-in-out;
+    }
+    
+    .skill-container > div {
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .skill-container > div:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        background-color: var(--primary-clr);
+        cursor: pointer;
+    }
+    
+    .skill-container > div:hover h4,
+    .skill-container > div:hover h6 {
+        color: var(--other-clr);
+    }
+    
+    .skill-container div div h4,
+    .skill-container div div h6 {
+        transition: color 0.3s ease-in-out;
+    }
+    
+}
